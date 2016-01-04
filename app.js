@@ -18,6 +18,9 @@ bookRouter = require('./Routes/bookRoutes')(Book);
 
 
 app.use('/api', bookRouter);
+// USING MULTIPLE ROUTES - You would name and define routes as the 2 lines below for example:
+//app.use('/api/books', bookRouter);
+//app.use('/api/authors', authorRouter);
 
 
 app.get('/', function(req, res) {
