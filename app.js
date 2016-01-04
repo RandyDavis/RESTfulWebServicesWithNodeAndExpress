@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 bookRouter = require('./Routes/bookRoutes')(Book);
 
 
-app.use('/api', bookRouter);
+app.use('/api/books', bookRouter);
 // USING MULTIPLE ROUTES - You would name and define routes as the 2 lines below for example:
 //app.use('/api/books', bookRouter);
 //app.use('/api/authors', authorRouter);
